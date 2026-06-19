@@ -1,0 +1,100 @@
+.final-container{
+  min-height:100vh;
+  background:black;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:20px;
+}
+
+.card{
+  background:#111;
+  border:1px solid gold;
+  padding:25px;
+  border-radius:15px;
+  max-width:400px;
+  box-shadow:0 0 20px gold;
+}
+
+h1,h2{
+  color:gold;
+}
+
+p{
+  color:#ddd;
+  line-height:1.5;
+}
+
+button{
+  margin-top:15px;
+  padding:10px 20px;
+  border:none;
+  border-radius:20px;
+  background:gold;
+  cursor:pointer;
+}
+
+.cartoon-btn{
+  cursor:pointer;
+  color:#ff4d88;
+  transition:0.3s;
+}
+
+.cartoon-btn:hover{
+  transform:scale(1.05);
+}
+
+.secret-letter{
+  margin-top:20px;
+  padding:15px;
+  border-radius:12px;
+  background:rgba(255,255,255,0.08);
+  animation:fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.cartoon-btn{
+  cursor:pointer;
+  color:#ff5c8a;
+  transition:0.3s;
+}
+
+.cartoon-btn:hover{
+  transform:scale(1.05);
+}
+
+.secret-letter{
+  margin-top:20px;
+  padding:15px;
+  border-radius:12px;
+  background:rgba(255,255,255,0.08);
+}
+
+.cartoon-btn{
+  cursor:pointer;
+  color:#ff5c8a;
+  transition:0.3s;
+}
+
+.cartoon-btn:hover{
+  transform:scale(1.05);
+}
+
+.secret-letter{
+  margin-top:20px;
+  padding:15px;
+  border-radius:12px;
+  background:rgba(255,255,255,0.08);
+}

@@ -1,0 +1,204 @@
+.gift-page{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(
+    180deg,
+    #120d12 0%,
+    #1b1218 50%,
+    #24161d 100%
+  );
+  color:white;
+  text-align:center;
+  overflow:hidden;
+  position:relative;
+}
+
+.gift-title{
+  color:#ffb6c1;
+  margin-bottom:30px;
+  font-size:2rem;
+  font-weight:600;
+
+  text-shadow:
+    0 0 6px rgba(255,182,193,0.25);
+}
+
+/* CONTAINER */
+.gift-container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  cursor:pointer;
+  position:relative;
+}
+
+/* RIBBON */
+.ribbon{
+  font-size:55px;
+  transition:0.8s ease;
+  z-index:2;
+}
+
+.ribbon.open{
+  transform:translateY(-60px) rotate(-25deg);
+  opacity:0;
+}
+
+/* BOX */
+.box{
+  font-size:140px;
+  transition:0.8s ease;
+
+  filter:drop-shadow(
+    0 0 15px rgba(255,182,193,0.25)
+  );
+}
+
+.box.open{
+  transform:scale(1.15);
+}
+
+/* STATUS TEXT */
+.status-text{
+  margin-top:20px;
+  color:#f5d9e2;
+  font-size:18px;
+}
+
+/* HAPPY BIRTHDAY POPUP */
+.birthday-popup{
+  position:fixed;
+  top:40px;
+  left:50%;
+  transform:translateX(-50%);
+  width:100%;
+  text-align:center;
+  z-index:999;
+
+  font-size:32px;
+  font-weight:600;
+
+  color:#ff9fbd;
+
+  text-shadow:
+    0 0 4px rgba(255,159,189,0.35),
+    0 0 8px rgba(255,159,189,0.15);
+
+  animation:birthdayPop 1s ease;
+}
+
+@keyframes birthdayPop{
+  from{
+    opacity:0;
+    transform:translateX(-50%) translateY(-50px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateX(-50%) translateY(0);
+  }
+}
+
+/* FLOATING ITEMS */
+.float{
+  position:absolute;
+  font-size:35px;
+  animation:floatUp 3s linear infinite;
+}
+
+@keyframes floatUp{
+  0%{
+    opacity:0;
+    transform:translateY(100px) scale(.5);
+  }
+
+  20%{
+    opacity:1;
+  }
+
+  100%{
+    opacity:0;
+    transform:translateY(-350px) scale(1.4);
+  }
+}
+
+/* HEARTS */
+.heart1{
+  left:-120px;
+  top:50px;
+}
+
+.heart2{
+  right:-120px;
+  top:20px;
+  animation-delay:.6s;
+}
+
+/* BALLOONS */
+.balloon1{
+  left:-80px;
+  top:120px;
+  animation-delay:.3s;
+}
+
+.balloon2{
+  right:-80px;
+  top:100px;
+  animation-delay:.8s;
+}
+
+/* STARS */
+.star1{
+  left:60px;
+  top:-20px;
+  animation-delay:.4s;
+}
+
+.star2{
+  right:60px;
+  top:-40px;
+  animation-delay:1s;
+}
+
+/* CAKES */
+.cake1{
+  left:-40px;
+  top:180px;
+  animation-delay:.5s;
+}
+
+.cake2{
+  right:-40px;
+  top:180px;
+  animation-delay:1.2s;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .gift-title{
+    font-size:1.6rem;
+    padding:0 15px;
+  }
+
+  .box{
+    font-size:120px;
+  }
+
+  .ribbon{
+    font-size:45px;
+  }
+
+  .birthday-popup{
+    font-size:24px;
+    padding:0 10px;
+  }
+
+  .float{
+    font-size:28px;
+  }
+
+}

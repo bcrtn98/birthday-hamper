@@ -1,0 +1,121 @@
+.album-container{
+  min-height:100vh;
+  background: radial-gradient(circle at top, #111, #0b0b0b);
+  color:white;
+  text-align:center;
+  padding:20px;
+  overflow:hidden;
+}
+
+/* GRID */
+.glass-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
+  margin-top:20px;
+  animation: fadeIn 0.6s ease;
+}
+
+/* CARD */
+.glass-card{
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:12px;
+  padding:10px;
+  cursor:pointer;
+  transition:0.3s;
+  position:relative;
+  backdrop-filter: blur(8px);
+}
+
+.glass-card:hover{
+  transform:scale(1.05);
+  border-color:gold;
+  box-shadow:0 0 15px rgba(255,215,0,0.2);
+}
+
+/* IMAGE THUMB */
+.thumb{
+  width:100%;
+  height:120px;
+  object-fit:cover;
+  border-radius:8px;
+  transition:0.3s;
+}
+
+.glass-card:hover .thumb{
+  transform:scale(1.05);
+}
+
+/* NUMBER BADGE */
+.photo-number{
+  position:absolute;
+  top:8px;
+  left:8px;
+  background:gold;
+  color:black;
+  padding:3px 6px;
+  font-size:12px;
+  border-radius:5px;
+  font-weight:bold;
+}
+
+/* OPEN TEXT */
+.open-text{
+  font-size:12px;
+  color:#aaa;
+  margin-top:5px;
+}
+
+/* MODAL */
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.92);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  animation: fadeIn 0.3s ease;
+}
+
+/* MODAL CARD */
+.modal-card{
+  background:#111;
+  padding:15px;
+  border-radius:14px;
+  max-width:320px;
+  box-shadow:0 0 20px rgba(255,215,0,0.15);
+  animation: pop 0.3s ease;
+  transition:0.3s;
+}
+
+/* IMAGE */
+.full-img{
+  width:100%;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+/* CAPTION */
+.caption{
+  margin-top:10px;
+  color:gold;
+  font-size:14px;
+  line-height:1.4;
+}
+
+/* HOVER GLOW */
+.modal-card:hover{
+  transform:scale(1.02);
+}
+
+/* ANIMATIONS */
+@keyframes pop{
+  from{transform:scale(0.6); opacity:0;}
+  to{transform:scale(1); opacity:1;}
+}
+
+@keyframes fadeIn{
+  from{opacity:0;}
+  to{opacity:1;}
+}

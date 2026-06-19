@@ -1,0 +1,134 @@
+/* ===== BASE PAGE ===== */
+.letters-container{
+  min-height:100vh;
+  background: radial-gradient(circle at top, #1a1a1a, #050505);
+  color:white;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:20px;
+}
+
+/* ===== TITLE ===== */
+h1{
+  color:gold;
+  margin-bottom:20px;
+  font-size:2rem;
+  text-shadow:0 0 10px rgba(255,215,0,0.5);
+}
+
+/* ===== ENVELOPE SCREEN ICON ===== */
+.envelope{
+  font-size:70px;
+  cursor:pointer;
+  transition:0.3s;
+  margin-top:20px;
+}
+
+.envelope:hover{
+  transform:scale(1.1);
+}
+
+/* ===== LETTER BOX ===== */
+.letter-box{
+  margin-top:20px;
+  padding:20px;
+  max-width:500px;
+  background:rgba(255,215,0,0.08);
+  border:1px solid gold;
+  border-radius:15px;
+  box-shadow:0 0 20px rgba(255,215,0,0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* LETTER TEXT */
+.letter-box pre{
+  white-space:pre-wrap;
+  text-align:left;
+  font-size:15px;
+  line-height:1.6;
+  color:#fff;
+}
+
+/* ===== BUTTONS ===== */
+button, a{
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 20px;
+  border:none;
+  border-radius:25px;
+  background:gold;
+  color:black;
+  font-weight:bold;
+  cursor:pointer;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+button:hover, a:hover{
+  transform:scale(1.05);
+  background:#ffcc00;
+}
+
+/* ===== MENU SCREEN ===== */
+.menu{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  margin-top:20px;
+  width:100%;
+  max-width:400px;
+}
+
+/* MENU ITEM CARDS */
+.menu-item{
+  padding:15px;
+  border:1px solid rgba(255,215,0,0.5);
+  background:rgba(255,215,0,0.08);
+  border-radius:12px;
+  cursor:pointer;
+  transition:0.3s;
+  font-size:16px;
+}
+
+.menu-item:hover{
+  transform:scale(1.05);
+  background:rgba(255,215,0,0.15);
+  box-shadow:0 0 15px rgba(255,215,0,0.2);
+}
+
+/* HINT TEXT */
+.hint{
+  opacity:0.7;
+  margin-bottom:10px;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(10px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width:600px){
+  .letter-box{
+    width:90%;
+    padding:15px;
+  }
+
+  h1{
+    font-size:1.5rem;
+  }
+
+  .envelope{
+    font-size:60px;
+  }
+}

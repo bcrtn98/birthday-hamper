@@ -1,0 +1,32 @@
+const reasons = [
+  "Because tumhi majhya face var nehmi smile anta. 🙃",
+  "Because tumhi mala nehmich support karta, no matter what. 🤌",
+  "Because tumcya sobat bollyavar majha divas khup better hoto. 🤗",
+  "Because tumhi maje comfort person ahat. 🫠",
+  "Because maje sagle drama tumhi patiently handle karta. 😜",
+  "Because tumhi mala special feel karvun deta ki mi tumcya life madhye important aahe. 🥹",
+  "Because tumhi majhyavar believe karta. 💫",
+  "Because tumcya happiness ne mala pan happiness milte. 🙂",
+  "Because i love that think jevha mi tumhala vicharte lai rag yet asel n an tumhi manata mala tuza kadhich rag yet nhi that time la mala khup bhari vatat😄",
+  "Because tumhi mala nehmi samjun gheta. 😌",
+  "Because distance asunhi tumhi nehmi close feel hota. 🫂",
+  "Because tumhi majhya life madhla best decision ahat. 🙂‍↔️",
+  "Because tumcya sobat mi completely myself aste. 🫶🏻",
+  "Because tumhi mala motivate karta. 🤎",
+  "Because tumcya sobat sagla share kelyavar manala halka feel hota. 😌",
+  "Because tumhi majhya small-small goshti lakshat thevta. 😗",
+  "Because tumhi mala safe feel karvun deta. 😍",
+  "Because tumhi majhi kalji karta, no matter mi kashi vagte. 🥰",
+  "Because tumcya sobat pratyek memory special aste. 🌸",
+  "Because tumhi maje best friend pan ahat. because mala khup vhangalya prakare samajun gheta ✨",
+  "Because tumhi mazya smor tumhi nehami tumcha rag contol karata mi kitihi irited kel tari . 😃",
+  "Because tumcya sobat future imagine karayla khup chan vatat. 😘",
+  "Because tumhi maje sagle drama ani mood swings sahan karta. 😁",
+  "Because tumcya sobat aslyavar sagla easy vatat. ❤️",
+  "Because i love the wey you treet me jari tumhi ragat asle tri. 💌",
+  "Because tumhi majhya life cha important part ahat. 💗",
+  "Because every day with you is my favorite day. ❤️",
+  "Because out of all the people in this world, majha heart ne tumhala choose kela. Forever. ❤️‍🩹👩‍❤️‍👨"
+];
+
+export default reasons;

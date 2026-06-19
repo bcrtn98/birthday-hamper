@@ -1,0 +1,60 @@
+.jar-container{
+  height:100vh;
+  background:#0b0b0b;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.jar{
+  font-size:70px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+/* SHAKE EFFECT */
+.shake{
+  animation: shake 0.3s;
+}
+
+@keyframes shake{
+  0%{transform:translateX(0);}
+  25%{transform:translateX(-5px);}
+  50%{transform:translateX(5px);}
+  75%{transform:translateX(-5px);}
+  100%{transform:translateX(0);}
+}
+
+/* PAPER SLIP */
+.reason-box{
+  margin-top:20px;
+  background:white;
+  color:black;
+  padding:15px;
+  border-radius:10px;
+  width:250px;
+  animation: fadeUp 0.4s ease;
+}
+
+/* POP ANIMATION */
+.pop{
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop{
+  from{transform:scale(0);}
+  to{transform:scale(1);}
+}
+
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(10px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+.hint{
+  margin-top:15px;
+  color:#aaa;
+}
