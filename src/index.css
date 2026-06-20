@@ -27,6 +27,9 @@ body{
   bottom:-120px;
   animation:floatBirthday linear infinite;
   will-change:transform;
+
+  opacity:0.6;
+  filter:blur(1.5px);
 }
 
 /* FLOAT ANIMATION */
@@ -93,4 +96,21 @@ body{
 
 ::-webkit-scrollbar-thumb:hover{
   background:#ff5fa2;
+}
+
+/* MOBILE OPTIMIZATION */
+
+@media (max-width: 768px){
+
+  .birthday-effects span{
+    font-size:18px !important;
+    opacity:0.35;
+    filter:blur(2px);
+  }
+
+  /* Mobile par kuch emojis hide */
+  .birthday-effects span:nth-child(2n){
+    display:none;
+  }
+
 }
