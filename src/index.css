@@ -103,12 +103,11 @@ body{
 @media (max-width: 768px){
 
   .birthday-effects span{
-    font-size:18px !important;
-    opacity:0.35;
-    filter:blur(2px);
+    font-size:20px !important;
+    opacity:0.5;
+    filter:blur(0.5px);
   }
 
-  /* Mobile par kuch emojis hide */
   .birthday-effects span:nth-child(2n){
     display:none;
   }
