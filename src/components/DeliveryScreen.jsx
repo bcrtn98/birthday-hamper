@@ -3,13 +3,12 @@ import "../styles/delivery.css";
 function DeliveryScreen({ onAccept }) {
 
   const playSound = () => {
-    const audio = new Audio("/doorbell.mp3");
+    const audio = new Audio("/birthday-hamper/doorbell.mp3");
     audio.play();
   };
 
   return (
     <div className="delivery-container">
-
       <div className="delivery-card">
 
         <div className="gift-icon">🎁</div>
@@ -31,7 +30,6 @@ function DeliveryScreen({ onAccept }) {
         </button>
 
       </div>
-
     </div>
   );
 }

@@ -19,6 +19,32 @@ function App() {
       {/* 🎶 MUSIC (always running) */}
       <Music />
 
+      {screen !== "delivery" && screen !== "gift" && (
+  <div className="birthday-effects">
+    {Array.from({ length: 200 }).map((_, i) => {
+      const emojis = [
+        "🎉","🎁","🎂","😍","❤️‍🩹","🎊","🎈","🍰","🧁","🌻",
+        "💋","💞","💓","🌟","🥳","🌹","💗","❤️","💝","😘",
+        "💕","✨"
+      ];
+
+      return (
+        <span
+          key={i}
+          style={{
+            left: `${Math.random() * 100}%`,
+            animationDuration: `${4 + Math.random() * 8}s`,
+            animationDelay: `${Math.random() * 5}s`,
+            fontSize: `${20 + Math.random() * 25}px`
+          }}
+        >
+          {emojis[Math.floor(Math.random() * emojis.length)]}
+        </span>
+      );
+    })}
+  </div>
+)}
+
       {/* DELIVERY */}
       {screen === "delivery" && (
         <DeliveryScreen onAccept={() => setScreen("gift")} />

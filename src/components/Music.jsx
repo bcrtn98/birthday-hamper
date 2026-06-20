@@ -1,11 +1,14 @@
 import { useRef, useState } from "react";
 
 function Music() {
-  const audioRef = useRef(new Audio("/music.mp3"));
+  const audioRef = useRef(
+  new Audio("/birthday-hamper/music.mp3")
+);
   const [playing, setPlaying] = useState(false);
 
   const toggleMusic = () => {
     if (!playing) {
+      audioRef.current.loop = true;
       audioRef.current.play();
       setPlaying(true);
     } else {
@@ -15,8 +18,26 @@ function Music() {
   };
 
   return (
-    <div style={{ position: "fixed", bottom: 15, right: 15 }}>
-      <button onClick={toggleMusic}>
+    <div
+      style={{
+        position: "fixed",
+        bottom: "15px",
+        right: "15px",
+        zIndex: 9999,
+      }}
+    >
+      <button
+        onClick={toggleMusic}
+        style={{
+          padding: "10px 15px",
+          borderRadius: "12px",
+          border: "none",
+          background: "#ff69b4",
+          color: "white",
+          cursor: "pointer",
+          fontWeight: "bold",
+        }}
+      >
         {playing ? "⏸ Pause Music" : "🎶 Play Music"}
       </button>
     </div>
