@@ -22,7 +22,7 @@ function App() {
       {screen !== "delivery" && screen !== "gift" && (
   <div className="birthday-effects">
     {Array.from({
-  length: window.innerWidth < 768 ? 80 : 200
+  length: window.innerWidth < 768 ? 100 : 200
 }).map((_, i) => {
       const emojis = [
         "🎉","🎁","🎂","😍","❤️‍🩹","🎊","🎈","🍰","🧁","🌻",
